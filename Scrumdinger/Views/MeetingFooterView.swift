@@ -26,11 +26,11 @@ struct MeetingFooterView: View {
                     Text("Last Speaker")
                 } else {
                     Text(speakerText)
-                    
-                }
-                Spacer()
-                Button(action: skipAction) {
-                    Image(systemName: "forward.fill")
+                    Spacer()
+                    Button(action: skipAction) {
+                        Image(systemName: "forward.fill")
+                    }
+                    .accessibilityLabel("Next speaker")
                 }
             }
         }
